@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class FormCompnent extends Component {
   state = {
     name: '',
-    address: '',
+    address: ''
   }
 
   createContact = (e) => {
