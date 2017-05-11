@@ -6,10 +6,10 @@ class FormCompnent extends Component {
     address: ''
   }
 
-  createContact = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const {name, address} = this.state;
-    this.props.createContact({
+    this.props.onSubmit({
       name,
       address
     });
@@ -47,7 +47,7 @@ class FormCompnent extends Component {
               value = {address} 
               onChange = {this.changeState('address')} />
           </div>
-          <button type="submit" className="btn btn-primary" onClick = { this.createContact}>Create</button>
+          <button type="submit" className="btn btn-primary" onClick = { this.handleSubmit}>Create</button>
         </form>
       </div>
     )
