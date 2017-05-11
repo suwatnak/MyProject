@@ -8,10 +8,15 @@ class App extends Component {
       { name: 'Somchai Haa', address: '123/456' }
     ]
   }
+  createContact = (contact) => {
+    this.setState({
+      contacts: [...this.state.contacts, contact]
+    })
+  }
   render() {
     return (
       <div className="container">
-        <Form />
+        <Form createContact={this.createContact}/>
         <hr />
         <Contacts {...this.state}/>
       </div>
