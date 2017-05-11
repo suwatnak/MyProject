@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class FormCompnent extends Component {
+class Form extends Component {
   state = {
     name: '',
     address: ''
@@ -54,4 +54,4 @@ class FormCompnent extends Component {
   }
 }
 
-export default FormCompnent;
+export default Form;
