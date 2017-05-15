@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Form from '../components/Form';
-import Contacts from '../components/Contacts';
+import { Form, Contacts } from '../components';
 
 class App extends Component {
   state = {
     contacts : [
-      { name: 'Somchai Haa', address: '123/456' }
+      { name: 'Suwat Nakchukaew', address: '70/78 m.2' }
     ]
   }
   createContact = (contact) => {
